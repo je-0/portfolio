@@ -1,46 +1,4 @@
 $(function(){
-	// 1) 초기 설정 관련
-	/*
-	var dimHtml="";
-
-	function dimFadeInOut(){
-		dimHtml+='<div class="prev_page_dim"></div>';
-		dimHtml+='<div class="next_page_dim"></div>';
-		$("body").append(dimHtml);
-		$(".prev_page_dim").delay(400).animate({height:0}, 400);
-	}
-	function GetCookie(name){
-		var value=null, search=name+"=";
-		if(document.cookie.length > 0){
-			var offset=document.cookie.indexOf(search);
-			if(offset != -1){
-				offset+=search.length;
-				var end=document.cookie.indexOf(";", offset);
-				if(end == -1) end=document.cookie.length;
-				value=unescape(document.cookie.substring(offset, end));
-			}
-		} return value;
-	}
-	function setCookie(name, value, expiredays){
-		var days=expiredays;
-		if(days){
-			var date=new Date();
-			date.setTime(date.getTime()+(days*24*60*60*1000));
-			var expires="; expires="+date.toGMTString();
-		}else{
-			var expires="";
-		}
-		document.cookie=name+"="+value+expires+"; path=/";
-	}
-
-	if(GetCookie("main") == "back"){
-		// dimFadeInOut();
-	}
-
-	$(window).on("beforeunload", function(){
-		// setCookie("main", "", 1);
-	});
-	*/
 
 	setTimeout(function(){
 		$(".prev_page_dim").delay(300).animate({height:0}, 300);
